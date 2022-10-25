@@ -5,13 +5,12 @@ function crear(){
     if (num >=0 && num <=9) {
         setTimeout(() => {
             for(let i=0; i<=num;i++){
-                tr+=`<tr><td>${num}</td><td>*</td><td>${i}</td><td>=</td><td>${i*num}</td></tr>`;
-                document.querySelector("table").innerHTML="";     
+            tr+=`<tr><td>${num}</td><td>*</td><td>${i}</td><td>=</td><td>${i*num}</td></tr>`;    
             }
         document.querySelector("table").innerHTML+=tr;
         }, 3000);
     } else {
-        document.querySelector("span").innerHTML="ERROR"
+        document.querySelector("span").innerHTML="ERROR";
         document.querySelector("table").innerHTML="";     
     }    
 }
